@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Home Gadgets — Curated picks for a connected home</title>
+<meta name="description" content="Curated smart home gadgets for kitchen, lighting, security, cleaning and more — reviewed, measured, and linked straight to Amazon.">
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  /* ---- hero (home page only) ---- */
+  .hero{
+    background:linear-gradient(180deg, var(--navy-deep) 0%, var(--navy) 100%);
+    color:#fff;
+    padding:64px 0 0;
+    overflow:hidden;
+  }
+  .hero-inner{
+    display:grid;
+    grid-template-columns:1.05fr 0.95fr;
+    align-items:center;
+    gap:20px;
+  }
+  .hero .eyebrow{color:var(--amber);}
+  .hero .eyebrow::before{background:var(--teal);}
+  .hero h1{
+    font-family:'Sora', sans-serif;
+    font-weight:700;
+    font-size:clamp(34px, 4.6vw, 52px);
+    line-height:1.08;
+    letter-spacing:-0.01em;
+    margin-top:16px;
+    max-width:560px;
+  }
+  .hero h1 span{color:var(--teal);}
+  .hero p{
+    margin-top:18px;
+    max-width:460px;
+    font-size:16px;
+    color:rgba(255,255,255,0.7);
+  }
+  .hero-ctas{margin-top:30px; display:flex; gap:12px; flex-wrap:wrap;}
+  .btn-primary{
+    background:var(--teal);
+    color:var(--navy-deep);
+    font-weight:700;
+    font-size:14.5px;
+    padding:14px 24px;
+    border-radius:8px;
+    transition:background .15s ease, transform .15s ease;
+  }
+  .btn-primary:hover, .btn-primary:focus-visible{background:#0FD6C1; transform:translateY(-1px);}
+  .btn-ghost{
+    border:1px solid rgba(255,255,255,0.22);
+    color:#fff;
+    font-weight:600;
+    font-size:14.5px;
+    padding:13px 22px;
+    border-radius:8px;
+    transition:border-color .15s ease, background .15s ease;
+  }
+  .btn-ghost:hover, .btn-ghost:focus-visible{border-color:var(--teal); background:rgba(255,255,255,0.05);}
+
+  /* ---- network illustration ---- */
+  .network{
+    position:relative;
+    height:380px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .network svg{width:100%; height:100%; max-width:440px;}
+  .node-dot{animation:pulse 2.6s ease-in-out infinite;}
+  .node-dot.d2{animation-delay:.4s;}
+  .node-dot.d3{animation-delay:.8s;}
+  .node-dot.d4{animation-delay:1.2s;}
+  .node-dot.d5{animation-delay:1.6s;}
+  @keyframes pulse{
+    0%, 100%{opacity:0.55; r:3;}
+    50%{opacity:1; r:4.5;}
+  }
+  .hero-floor{height:38px;}
+
+  /* ---- articles layout ---- */
+  .home-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:0;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap inner">
+    <a class="brand" href="index.html">
+      <img class="logo-mark" src="assets/logo.svg" alt="">
+      <span>Smart Home Gadgets<small>Curated · Measured · Honest</small></span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.getElementById('site-nav').classList.toggle('open')"><span></span></button>
+    <nav id="site-nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="kitchen.html">Kitchen</a>
+      <a href="lighting-fans.html">Lighting &amp; Fans</a>
+      <a href="security-locks.html">Security &amp; Locks</a>
+      <a href="cleaning.html">Cleaning</a>
+      <a href="smart-hubs.html">Smart Hubs</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-inner">
+    <div>
+      <div class="eyebrow">Curated smart home picks</div>
+      <h1>A home that <span>thinks ahead</span>, one gadget at a time.</h1>
+      <p>We test the difference between a genuinely useful smart device and a gimmick — then point you straight to the ones worth buying.</p>
+      <div class="hero-ctas">
+        <a class="btn-primary" href="#categories">Browse categories ↓</a>
+        <a class="btn-ghost" href="lighting-fans.html">Start with lighting</a>
+      </div>
+    </div>
+    <div class="network" aria-hidden="true">
+      <svg viewBox="0 0 440 380">
+        <!-- connecting lines -->
+        <g stroke="rgba(18,183,166,0.35)" stroke-width="1.4" stroke-dasharray="4 5">
+          <line x1="220" y1="190" x2="90" y2="80"/>
+          <line x1="220" y1="190" x2="350" y2="70"/>
+          <line x1="220" y1="190" x2="70" y2="270"/>
+          <line x1="220" y1="190" x2="360" y2="280"/>
+          <line x1="220" y1="190" x2="220" y2="330"/>
+        </g>
+        <!-- central house -->
+        <g transform="translate(220,190)">
+          <path d="M-38 6L0 -28L38 6" stroke="#12B7A6" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M-26 -2V32C-26 34.2 -24.2 36 -22 36H22C24.2 36 26 34.2 26 32V-2" stroke="#12B7A6" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="0" cy="16" r="3" fill="#F2994A"/>
+        </g>
+        <!-- device nodes -->
+        <g fill="#F5F7FA">
+          <circle class="node-dot d1" cx="90" cy="80" r="4"/>
+          <circle class="node-dot d2" cx="350" cy="70" r="4"/>
+          <circle class="node-dot d3" cx="70" cy="270" r="4"/>
+          <circle class="node-dot d4" cx="360" cy="280" r="4"/>
+          <circle class="node-dot d5" cx="220" cy="330" r="4"/>
+        </g>
+        <g fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.2">
+          <circle cx="90" cy="80" r="16"/>
+          <circle cx="350" cy="70" r="16"/>
+          <circle cx="70" cy="270" r="16"/>
+          <circle cx="360" cy="280" r="16"/>
+          <circle cx="220" cy="330" r="16"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+  <div class="hero-floor"></div>
+</section>
+
+<section class="section" id="categories">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Shop by category</h2>
+      <p>Five rooms, five shortlists. Pick where you're starting and skip the noise.</p>
+    </div>
+    <div class="cat-tiles">
+
+      <a class="cat-tile" href="kitchen.html">
+        <svg class="icon" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="19" stroke="#12B7A6" stroke-width="1.4"/><path d="M13 15h14M15 15v11a2 2 0 002 2h6a2 2 0 002-2V15" stroke="#0F2A47" stroke-width="1.8" stroke-linecap="round"/><path d="M17 12v3M20 12v3M23 12v3" stroke="#0F2A47" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <h3>Kitchen</h3>
+        <p>Smart coffee makers, ovens &amp; countertop tools</p>
+        <div class="go">View picks →</div>
+      </a>
+
+      <a class="cat-tile" href="lighting-fans.html">
+        <svg class="icon" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="19" stroke="#12B7A6" stroke-width="1.4"/><circle cx="20" cy="17" r="6" stroke="#0F2A47" stroke-width="1.8"/><path d="M17 27h6M18 30h4" stroke="#0F2A47" stroke-width="1.8" stroke-linecap="round"/><path d="M20 8v2M12 17h-2M30 17h-2" stroke="#F2994A" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <h3>Lighting &amp; Fans</h3>
+        <p>Bulbs, LED strips, smart plugs &amp; switches</p>
+        <div class="go">View picks →</div>
+      </a>
+
+      <a class="cat-tile" href="security-locks.html">
+        <svg class="icon" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="19" stroke="#12B7A6" stroke-width="1.4"/><rect x="14" y="18" width="12" height="10" rx="2" stroke="#0F2A47" stroke-width="1.8"/><path d="M16.5 18v-3a3.5 3.5 0 017 0v3" stroke="#0F2A47" stroke-width="1.8"/><circle cx="20" cy="23" r="1.4" fill="#F2994A"/></svg>
+        <h3>Security &amp; Locks</h3>
+        <p>Video doorbells, cameras &amp; smart locks</p>
+        <div class="go">View picks →</div>
+      </a>
+
+      <a class="cat-tile" href="cleaning.html">
+        <svg class="icon" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="19" stroke="#12B7A6" stroke-width="1.4"/><circle cx="20" cy="21" r="8" stroke="#0F2A47" stroke-width="1.8"/><circle cx="20" cy="21" r="2.6" fill="#F2994A"/><path d="M15 13l1.5 2M25 13l-1.5 2" stroke="#0F2A47" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <h3>Cleaning</h3>
+        <p>Robot vacuums, mops &amp; auto-empty stations</p>
+        <div class="go">View picks →</div>
+      </a>
+
+      <a class="cat-tile" href="smart-hubs.html">
+        <svg class="icon" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="19" stroke="#12B7A6" stroke-width="1.4"/><rect x="15" y="12" width="10" height="16" rx="3" stroke="#0F2A47" stroke-width="1.8"/><circle cx="20" cy="19" r="2.4" stroke="#0F2A47" stroke-width="1.6"/><circle cx="20" cy="24" r="1" fill="#F2994A"/></svg>
+        <h3>Smart Hubs</h3>
+        <p>Speakers, displays &amp; sensors that tie it together</p>
+        <div class="go">View picks →</div>
+      </a>
+
+      <div class="cat-tile" style="display:flex; flex-direction:column; justify-content:center; background:var(--navy); border-color:var(--navy);">
+        <p style="color:rgba(255,255,255,0.65); font-size:13px; margin-top:0;">More categories coming as the site grows.</p>
+        <h3 style="color:#fff; margin-top:8px;">Follow along on Pinterest →</h3>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0;">
+  <div class="wrap home-grid">
+    <div class="section-head">
+      <h2>From the blog</h2>
+      <p>Short, practical reads before you buy anything.</p>
+    </div>
+
+    <div class="article">
+      <div class="eyebrow">Getting started</div>
+      <h3>Where to start a smart home without wasting money</h3>
+      <p>Most people over-buy in their first month — a hub, three types of bulbs, and a lock, all from different ecosystems that barely talk to each other. The better approach is to fix one daily annoyance first: a light you always forget to turn off, a thermostat you keep adjusting manually, a door you're never sure you locked.</p>
+      <p>Start with a single smart plug or bulb in the room you use most. It's inexpensive, works with nearly every ecosystem, and teaches you how the app, the automations, and the voice commands actually feel before you commit to anything bigger.</p>
+    </div>
+
+    <div class="article">
+      <div class="eyebrow">Buyer's guide</div>
+      <h3>WiFi, Zigbee, or Matter — does the protocol actually matter?</h3>
+      <p>Short answer: only if you plan to own more than a handful of devices. WiFi devices are the simplest to set up and need no extra hardware, but they can crowd your router as you add more. Zigbee devices route through a separate hub and tend to be more reliable at scale, which matters once you're past five or six gadgets.</p>
+      <p>Matter is the newer standard built to make all of this work together regardless of brand — look for the Matter logo if you want some insurance against getting locked into one ecosystem.</p>
+    </div>
+
+    <div class="article">
+      <div class="eyebrow">Honest take</div>
+      <h3>Five signs a "smart" gadget isn't actually worth it</h3>
+      <p>Not everything needs an app. A genuinely useful smart device usually solves a scheduling problem, a safety concern, or a repetitive task — not just adds a screen to something that worked fine before. Before buying, ask what you'll actually do differently once it's connected.</p>
+      <p>If the honest answer is "check an app instead of glancing at it," it's probably not worth the price premium over the non-smart version.</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="section" style="padding-top:0;">
+  <div class="wrap">
+    <div class="cta-banner">
+      <div>
+        <h3>New picks land on Pinterest first</h3>
+        <p>Follow along for the boards behind every category on this site — kitchen, lighting, security, and more.</p>
+      </div>
+      <a class="btn" href="https://pinterest.com/YOUR-PINTEREST-USERNAME" target="_blank" rel="noopener">Follow on Pinterest →</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="foot-brand"><img class="logo-mark" src="assets/logo.svg" alt=""> Smart Home Gadgets</div>
+        <div class="foot-links" style="margin-top:16px;">
+          <a href="kitchen.html">Kitchen</a>
+          <a href="lighting-fans.html">Lighting &amp; Fans</a>
+          <a href="security-locks.html">Security &amp; Locks</a>
+          <a href="cleaning.html">Cleaning</a>
+          <a href="smart-hubs.html">Smart Hubs</a>
+        </div>
+      </div>
+      <a class="pin-link" href="https://pinterest.com/YOUR-PINTEREST-USERNAME" target="_blank" rel="noopener">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.24 2.64 7.86 6.36 9.32-.09-.79-.17-2.01.04-2.88.19-.79 1.23-5.02 1.23-5.02s-.31-.63-.31-1.55c0-1.46.84-2.55 1.9-2.55.9 0 1.33.67 1.33 1.48 0 .9-.57 2.25-.87 3.5-.25 1.05.52 1.9 1.55 1.9 1.86 0 3.29-1.96 3.29-4.79 0-2.5-1.8-4.25-4.37-4.25-2.98 0-4.73 2.23-4.73 4.54 0 .9.34 1.86.78 2.39.09.1.1.2.07.3-.08.32-.25 1.02-.29 1.16-.05.19-.15.23-.35.14-1.3-.6-2.11-2.5-2.11-4.02 0-3.27 2.38-6.28 6.86-6.28 3.6 0 6.4 2.57 6.4 5.99 0 3.58-2.25 6.46-5.38 6.46-1.05 0-2.04-.55-2.38-1.19l-.65 2.46c-.23.9-.87 2.02-1.3 2.71.98.3 2.02.47 3.1.47 5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg>
+        Pinterest
+      </a>
+    </div>
+    <p class="disclosure">Smart Home Gadgets is a participant in the Amazon Associates Program, an affiliate advertising program designed to provide a means for sites to earn commissions by linking to Amazon.com. As an Amazon Associate, this site earns from qualifying purchases.</p>
+    <p class="copyright">© <span id="year"></span> Smart Home Gadgets</p>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
